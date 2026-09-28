@@ -1,0 +1,20 @@
+{
+  "name": "tsudou-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/index.js",
+    "stop": "node scripts/stop.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npm run build && node server/index.js"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
