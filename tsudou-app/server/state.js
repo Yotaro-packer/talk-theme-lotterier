@@ -37,6 +37,18 @@ export function submitTheme(text) {
   if (!trimmed) {
     throw new Error('トークテーマを入力してください');
   }
+
+  // 「トークテーマ応募中！」の枠は実質空欄なので、抽選を経由せず直接そこへ埋める
+  const placeholderIndex = upcoming.findIndex((item) => item.isPlaceholder);
+  if (placeholderIndex !== -1) {
+    upcoming[placeholderIndex] = {
+      ...upcoming[placeholderIndex],
+      text: trimmed,
+      isPlaceholder: false,
+    };
+    return;
+  }
+
   pool.push({ text: trimmed });
 }
 
