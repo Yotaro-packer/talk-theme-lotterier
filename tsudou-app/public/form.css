@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f4f8;
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(20, 30, 60, 0.08);
+  padding: 32px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #1b2740;
+}
+
+.hint {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #6b7386;
+  line-height: 1.5;
+}
+
+textarea {
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
+  padding: 12px;
+  border: 1px solid #d3d8e2;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #3b5bdb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2f47ab;
+}
+
+.message {
+  margin: 16px 0 0;
+  min-height: 20px;
+  font-size: 14px;
+  color: #2b8a3e;
+}
+
+.message.error {
+  color: #c92a2a;
+}

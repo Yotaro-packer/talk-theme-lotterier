@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>トークテーマ投稿</title>
+    <link rel="stylesheet" href="/form.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>トークテーマを投稿する</h1>
+      <p class="hint">投稿されたテーマは、営業日終了時に抽選で「今後のトークテーマ」に追加されます。</p>
+      <form id="themeForm">
+        <textarea
+          id="themeText"
+          placeholder="例: 最近ハマっていることは？"
+          maxlength="200"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">投稿する</button>
+      </form>
+      <p id="message" class="message" role="status"></p>
+    </main>
+    <script src="/form.js"></script>
+  </body>
+</html>

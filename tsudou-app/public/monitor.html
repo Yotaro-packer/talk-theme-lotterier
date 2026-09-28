@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>トークテーマ モニター</title>
+    <link rel="stylesheet" href="/monitor.css" />
+  </head>
+  <body>
+    <div id="stage" class="stage">
+      <button id="endDayBtn" class="end-day-btn" type="button">営業日終了</button>
+
+      <section class="today">
+        <h1 class="today-label">今日のトークテーマ</h1>
+        <p class="today-text" id="todayText">読み込み中...</p>
+      </section>
+
+      <section class="upcoming">
+        <h2 class="upcoming-label">今後のトークテーマ</h2>
+        <ol class="upcoming-list" id="upcomingList"></ol>
+      </section>
+    </div>
+    <script src="/monitor.js"></script>
+  </body>
+</html>
